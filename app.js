@@ -3,7 +3,7 @@ const nunjucks = require('nunjucks');
 const mailer = require('./libs/mailer');
 // const methodOverride = require('method-override') ;
 
-const port = process.env.PORT || 3033;
+const port = process.env.PORT || 3034;
 const routes = require('./src/routes');
 
 const app = express();

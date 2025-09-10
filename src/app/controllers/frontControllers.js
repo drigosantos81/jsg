@@ -15,13 +15,13 @@ module.exports = {
 
     },
 
-    async landing(req, res) {
-        try {
-            return res.render('landing');
-        } catch (error) {
-            console.log(error);
-        }
-    },
+    // async landing(req, res) {
+    //     try {
+    //         return res.render('landing');
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // },
 
     // ==== PÁGINA RECEITAS ====
     async recipes(req, res) {

@@ -2,12 +2,13 @@
   "name": "jsgconst",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "app.js",  
   "scripts": {
+    "kill-port": "npx kill-port 3034",
     "debug": "nodemon --inspect=0.0.0.0:9229 app.js",
-    "start": "npm-run-all -p nodemon browsersync",
+    "start": "npm-run-all kill-port -p nodemon browsersync",
     "nodemon": "nodemon app.js",
-    "browsersync": "browser-sync start --proxy http://localhost:3033 --files ['assets', 'css', 'js']"
+    "browsersync": "browser-sync start --proxy http://localhost:3034 --files ['assets', 'css', 'js']"
   },
   "keywords": [],
   "author": "",
